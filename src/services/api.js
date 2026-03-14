@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "/api/ideas"
+  baseURL: "https://randomideagenerator-backend.onrender.com/api/ideas"
 });
 
 export const getAllIdeas = () => API.get();

@@ -4,7 +4,7 @@ const API = axios.create({
   baseURL: "https://randomideagenerator-backend.onrender.com/api/ideas"
 });
 
-export const getAllIdeas = () => API.get();
+export const getAllIdeas = () => API.get("");
 export const getIdeaById = (id) => API.get(`/${id}`);
 export const getRandomIdea = () => API.get("/random");
 export const createIdea = (idea) => API.post("", idea);
